@@ -1,0 +1,40 @@
+
+
+
+body {
+    background-color: whitesmoke;
+}
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+
+.container {
+
+    width: auto;
+    height: auto;
+    background-color: black;
+}
+
+.w3-col m3 w3-green w3-center {
+
+    width: 300px;
+    float: left;
+    background-color: pink;
+}
+
+.col-md-c {
+
+    width: 500px;
+    background-color: white;
+}
+
+
+.col-md-r {
+
+    width: 300px;
+    float: right;
+    background-color: red;
+}
