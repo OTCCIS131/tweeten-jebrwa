@@ -11,30 +11,13 @@ p {
     color: red;
 }
 
-.container {
-
+.container-fluid {
     width: auto;
-    height: auto;
-    background-color: black;
+    height: auto;   
+
 }
 
-.w3-col m3 w3-green w3-center {
-
-    width: 300px;
-    float: left;
-    background-color: pink;
-}
-
-.col-md-c {
-
-    width: 500px;
-    background-color: white;
-}
-
-
-.col-md-r {
-
-    width: 300px;
-    float: right;
-    background-color: red;
+.w3-row {
+    padding-left: 10%;
+    width: 90%;
 }
