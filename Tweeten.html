@@ -38,7 +38,8 @@
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+            </button>
           </form>
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tweet</button>
         </div>
@@ -50,7 +51,7 @@
     <div class="container-fluid">
 
         <div class="w3-row">
-            <div class="w3-col m3 w3-gray w3-center">
+            <div class="w3-col m3 w3-whitesmoke w3-center">
                 <p>Jevon Wallace</p>
                 <ul class="fa-ul">
                   <li><i class="fa fa-map"></i> Springfield, Mo</li>
@@ -61,11 +62,23 @@
             </div>
 
             <div class="w3-col m6 w3-whitesmoke w3-center">
-                <p>M</p>
+
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Compose New Tweet</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  <p><i class="fa fa-map"></i></p>
+                  <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">tweet</a>
+                </div>
+              </form>
             </div>
 
-            <div class="w3-col m3 w3-gray w3-center">
-                <p>R</p>
+           
+
+
+
+            <div class="w3-col m3 w3-whitesmoke w3-center">
+                <p>Your Tweet Activity</p>
+                <p>Nothing.</p>
             </div>
 
         </div> 
