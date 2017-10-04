@@ -106,26 +106,39 @@
 
 <script>
 
-$(function(){
-$('.heart').click(({target}) => {
-  console.log(event.target)
-  let currentCount = $(this).next().text()
- let newCount = parseInt(currentCount) +1
-  console.log(currentCount)
+  
+  
+  
+  
+ $(function(){
+ $('.button').click(event =>{
+ let currentCount =  $(event.target).next().text()
+ let newCount = parseInt(currentCount) + 1
+ $(event.target).next().text(newCount)
+ })
+ })
+  
+  
+//$(function(){
+//$('.heart').click(({target}) => {
+// console.log(event.target)
+// let currentCount = $(this).next().text()
+//let newCount = parseInt(currentCount) +1
+//console.log(currentCount)
 
 
 
-$(function(){
-$('.heart').click(({target}) => {
-  console.log(event.target)
-  let currentCount = $(".counter").text()
- currentCount ++
- $(".counter").text(currentCount)
-  console.log(currentCount)
+//$(function(){
+//$('.heart').click(({target}) => {
+// console.log(event.target)
+// let currentCount = $(".counter").text()
+//currentCount ++
+//$(".counter").text(currentCount)
+//console.log(currentCount)
 
 
 
-tag.fourm-group; i[true=0] .fa-heart
+//tag.fourm-group; i[true=0] .fa-heart
 
 
 
