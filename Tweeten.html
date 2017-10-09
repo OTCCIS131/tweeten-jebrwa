@@ -68,10 +68,10 @@
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   
                   <div>
-                  <i class="fa fa-comment comment" aria-hidden="true"></i><span>32</span>
-                  <i class="fa fa-heart heart" aria-hidden="true"></i><span class="counter">0</span>
-                  <i class="fa fa-retweet retweet" aria-hidden="true"></i><span class="counter">50</span>
-                  <i class="fa fa-envelope-o envelope" aria-hidden="true"></i>
+                  <i class="fa fa-fw fa-comment button" aria-hidden="true"></i><span>32</span>
+                  <i class="fa fa-fw fa-heart button" aria-hidden="true"></i><span class="counter"><span>12</span>
+                  <i class="fa fa-fw fa-retweet button" aria-hidden="true"></i><span class="counter"><span>50</span>
+                  <i class="fa fa-envelope-o envelope button" aria-hidden="true"></i>
                   </div>
                   
                   <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">tweet</a>
@@ -107,40 +107,13 @@
 <script>
 
   
-  
-  
-  
  $(function(){
  $('.button').click(event =>{
  let currentCount =  $(event.target).next().text()
  let newCount = parseInt(currentCount) + 1
- $(event.target).next().text(newCount)
- })
- })
+ $(event.target).next().text(newCount)})
+ });
   
-  
-//$(function(){
-//$('.heart').click(({target}) => {
-// console.log(event.target)
-// let currentCount = $(this).next().text()
-//let newCount = parseInt(currentCount) +1
-//console.log(currentCount)
-
-
-
-//$(function(){
-//$('.heart').click(({target}) => {
-// console.log(event.target)
-// let currentCount = $(".counter").text()
-//currentCount ++
-//$(".counter").text(currentCount)
-//console.log(currentCount)
-
-
-
-//tag.fourm-group; i[true=0] .fa-heart
-
-
  // const incremeant = () =>
     //{
     //  let currentCount = likeButton[0].nextSibling.textContent
@@ -151,8 +124,6 @@
     //let likeButton = document.getElementsByClassName("heart");
     //likeButton[0].addEventListener("click",incremeant)
 
-
-});
 
 </script>
   
