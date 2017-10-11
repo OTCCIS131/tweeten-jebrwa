@@ -41,7 +41,6 @@
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
             </button>
           </form>
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tweet</button>
         </div>
       </nav>
     </header>
@@ -62,11 +61,12 @@
             </div>
 
             <div class="w3-col m6 w3-whitesmoke w3-center">
-
+              <input type="hidden" name="tweet" value "texts">
                 <div class="form-group">
-                  <label for="exampleFormControlTextarea1">Compose New Tweet</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  
+            <label>
+                  <label for="newTweet">Compose New Tweet</label>
+                  <textarea class="form-control" id="newTweet" rows="3"></textarea>
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Tweet</button>
                   <div>
                   <i class="fa fa-fw fa-comment button" aria-hidden="true"></i><span>32</span>
                   <i class="fa fa-fw fa-heart button" aria-hidden="true"></i><span class="counter"><span>12</span>
@@ -74,15 +74,25 @@
                   <i class="fa fa-envelope-o envelope button" aria-hidden="true"></i>
                   </div>
                   
-                  <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">tweet</a>
+                  
                 </div>
               </form>
             </div>
 
             <div class="w3-col m3 w3-whitesmoke w3-center">
-                <p>Your Tweet Activity</p>
-                <p>Nothing.</p>
+              <p>Your Tweet Activity</p>
+              <p>Nothing.</p>
+              <ul class="fa-ul">
+                <li><i class="fa fa-map"></i> Springfield, Mo</li>
+                <li><i class="fa fa-link"></i> Broskemusic.com</li>
+                <li><i class="fa fa-calendar-o"></i> Since Yesterday</li>
+                <li><i class="fa fa-apple"></i> LOVE</li>
+              </ul>
             </div>
+
+              <form id="newTweet">
+                <div class="form-group">
+                </div>
 
         </div> 
         
@@ -114,6 +124,54 @@
  $(event.target).next().text(newCount)})
  });
   
+
+
+
+$(function (){
+
+function addDeleteButton(element) {
+$(element).prepend(
+$('<button>').addclass('btn btn-xs btn-danger pull-right delete')
+  .append($("<i>").addClass('fa fa-items fa-fw'))
+)
+}
+
+
+})
+
+
+
+
+
+
+  $(function () {
+    $('#newTweet').submit(function (e) {
+    e.preventDefault()
+     let newTweet = $(['<li>'])
+     newElement.addClass('list-group-item')
+     newElement.text(newTweet)
+     $('#newTweet').append(newTweet)
+     newTweetinput.val('')
+    console.log("New Tweet", newTweet)
+    })
+  });
+
+$('#tweetList li').each(function (){
+addDeleteButton(this)
+})
+
+$(document).on('click', 'button.delete', function (e)  {
+      $(this).parent().remove()
+
+
+})
+
+
+$("button.delete").click(function)
+
+
+
+
  // const incremeant = () =>
     //{
     //  let currentCount = likeButton[0].nextSibling.textContent
